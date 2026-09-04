@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us — Nexora</title>
-  <meta name="description" content="Learn about Nexora's mission, team and values — a senior product, design and engineering studio for SaaS and tech companies.">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23155EEF'/%3E%3Ctext x='50' y='68' font-size='58' font-family='Arial' font-weight='800' fill='white' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
+  <title>About Us — SPL Techbot</title>
+  <meta name="description" content="Discover the mission, educational philosophy, and future vision of SPL Techbot — bringing hands-on robotics, coding, and AI learning into schools.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23155EEF'/%3E%3Cpath d='M30 70 L30 30 L50 50 L70 30 L70 70' stroke='white' stroke-width='10' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -15,23 +15,43 @@
 </head>
 <body>
 
+  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-nexora fixed-top">
     <div class="container">
-      <a class="navbar-brand navbar-brand-custom" href="index.html">Nexora<span>.</span></a>
+      <a class="navbar-brand navbar-brand-custom d-flex align-items-center gap-2" href="index.html">
+        <span class="d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-3 p-1" style="width:34px;height:34px;">
+          <i class="bi bi-cpu-fill fs-5"></i>
+        </span>
+        <span>SPL<span class="text-primary-custom">Techbot</span></span>
+      </a>
       <button class="navbar-toggler navbar-toggler-custom" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="bar"></span><span class="bar"></span><span class="bar"></span>
       </button>
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto align-items-lg-center gap-1 mt-3 mt-lg-0">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link"  href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link"  href="portfolio.html">Portfolio</a></li>
-          <li class="nav-item"><a class="nav-link"  href="blog.html">Blog</a></li>
-          <li class="nav-item"><a class="nav-link"  href="pricing.html">Pricing</a></li>
-          <li class="nav-item"><a class="nav-link"  href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="services.html"><i class="bi bi-grid-fill"></i> All Solutions Overview</a></li>
+              <li><hr class="dropdown-divider my-1"></li>
+              <li><a class="dropdown-item" href="robotics-ai-labs.html"><i class="bi bi-robot"></i> Robotics &amp; AI Labs</a></li>
+              <li><a class="dropdown-item" href="stem-labs.html"><i class="bi bi-tools"></i> STEM Labs</a></li>
+              <li><a class="dropdown-item" href="stem-kits.html"><i class="bi bi-box-seam"></i> STEM Kits</a></li>
+              <li><a class="dropdown-item" href="workshops.html"><i class="bi bi-lightning-charge"></i> Workshops</a></li>
+              <li><a class="dropdown-item" href="trainer-support.html"><i class="bi bi-person-video3"></i> Trainer Support</a></li>
+              <li><a class="dropdown-item" href="school-consultation.html"><i class="bi bi-chat-square-text"></i> School Consultation</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="curriculum.html">Curriculum</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
           <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
-            <a href="contact.html" class="btn btn-primary btn-sm-custom w-100">Get Started</a>
+            <a href="contact.html" class="btn btn-primary btn-sm-custom w-100">
+              <i class="bi bi-calendar-event me-1"></i> Book a Demo
+            </a>
           </li>
         </ul>
       </div>
@@ -41,36 +61,55 @@
   <!-- PAGE HEADER -->
   <header class="page-header">
     <div class="container">
-      <h1 class="mb-3">About Nexora</h1>
+      <h1 class="mb-3">About SPL Techbot</h1>
       <div class="breadcrumb-custom">
-        <a href="index.html">Home</a> <span>/</span> <span class="active">About</span>
+        <a href="index.html">Home</a> <span>/</span> <span class="active">About Us</span>
       </div>
     </div>
   </header>
 
-  <!-- STORY -->
+  <!-- WHO WE ARE & WHY WE WERE CREATED -->
   <section class="section">
     <div class="container">
       <div class="row align-items-center g-5">
         <div class="col-lg-6 reveal">
-          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&h=560&fit=crop" class="rounded-img w-100" alt="Nexora studio workspace" style="aspect-ratio:5/4; object-fit:cover;">
-        </div>
-        <div class="col-lg-6 reveal">
-          <span class="eyebrow">Our story</span>
-          <h2 class="section-title">Founded by operators, built for operators</h2>
-          <p class="section-subtitle mb-3">Nexora started in 2014 when three product leads, frustrated with slow agency turnaround, decided to build the studio they wished they could hire. Over a decade later, we've shipped products for fintech, healthtech and B2B SaaS companies across 34 countries.</p>
-          <p class="mb-4">Today our team of 42 designers, engineers and strategists works in small, senior pods — each dedicated to two or three clients at a time so quality never slips.</p>
-          <div class="row g-3">
-            <div class="col-6">
-              <div class="d-flex align-items-center gap-3">
-                <div class="icon-box icon-box-primary"><i class="bi bi-calendar-check"></i></div>
-                <div><strong class="text-navy d-block">Since 2014</strong><small class="text-slate">12 years operating</small></div>
+          <div class="position-relative">
+            <img src="https://images.unsplash.com/photo-1577495508048-b635879837f1?w=700&h=560&fit=crop" class="rounded-img w-100 shadow-md" alt="Modern STEM classroom space with students working with technology">
+            <div class="hero-float-badge badge-1 d-none d-sm-flex" style="bottom:-20px; right:-10px; top:auto;">
+              <div class="icon-box icon-box-primary"><i class="bi bi-lightbulb"></i></div>
+              <div>
+                <strong class="text-navy">Experiential Learning</strong><br>
+                <small class="text-slate">Beyond static textbooks</small>
               </div>
             </div>
-            <div class="col-6">
-              <div class="d-flex align-items-center gap-3">
-                <div class="icon-box icon-box-success"><i class="bi bi-globe"></i></div>
-                <div><strong class="text-navy d-block">Remote-first</strong><small class="text-slate">Across 9 timezones</small></div>
+          </div>
+        </div>
+        <div class="col-lg-6 reveal">
+          <span class="eyebrow">Who We Are</span>
+          <h2 class="section-title">Reimagining Technology Education in Schools</h2>
+          <p class="section-subtitle mb-3">
+            SPL Techbot is an education-technology initiative created to bridge the gap between traditional academic curricula and the rapidly evolving demands of modern engineering, computing, and automation.
+          </p>
+          <p class="text-slate mb-4">
+            We recognized that while students are surrounded by intelligent devices, computers, and automated machines, standard school syllabi frequently restrict technology learning to theoretical memorization or basic computer literacy. We founded SPL Techbot to give students the chance to roll up their sleeves: connecting wires, testing sensors, coding algorithms, and debugging tangible prototypes.
+          </p>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="p-3 bg-soft rounded-3 border">
+                <div class="d-flex align-items-center gap-2 mb-1">
+                  <i class="bi bi-bullseye text-primary-custom fs-5"></i>
+                  <strong class="text-navy">Our Vision</strong>
+                </div>
+                <small class="text-slate">To empower every student with the confidence, problem-solving mindset, and practical technological literacy to shape tomorrow.</small>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="p-3 bg-soft rounded-3 border">
+                <div class="d-flex align-items-center gap-2 mb-1">
+                  <i class="bi bi-rocket-takeoff text-secondary fs-5"></i>
+                  <strong class="text-navy">Our Mission</strong>
+                </div>
+                <small class="text-slate">To be the trusted technology-learning partner for private schools by providing labs, kits, structured curriculum, and instructor support.</small>
               </div>
             </div>
           </div>
@@ -79,158 +118,302 @@
     </div>
   </section>
 
-  <!-- MISSION / VALUES -->
+  <!-- OUR EDUCATIONAL PHILOSOPHY -->
   <section class="section bg-soft">
     <div class="container">
       <div class="row section-header justify-content-center text-center">
-        <div class="col-lg-7 reveal">
-          <span class="eyebrow">What drives us</span>
-          <h2 class="section-title">The principles behind every engagement</h2>
+        <div class="col-lg-8 reveal">
+          <span class="eyebrow">Educational Philosophy</span>
+          <h2 class="section-title">"Learn. Build. Experiment. Innovate."</h2>
+          <p class="section-subtitle mx-auto">
+            Our learning ethos rests on four progressive pillars that shift students from passive consumers of technology to proactive creators and critical thinkers.
+          </p>
         </div>
       </div>
       <div class="row g-4">
         <div class="col-md-6 col-lg-3 reveal">
-          <div class="card-premium text-center">
-            <div class="icon-box icon-box-primary mx-auto mb-3"><i class="bi bi-bullseye"></i></div>
-            <h3 class="card-title">Outcomes over output</h3>
-            <p>We measure success in business impact, not hours logged or pages shipped.</p>
+          <div class="card-premium text-center h-100">
+            <div class="icon-box icon-box-primary mx-auto mb-3"><i class="bi bi-book"></i></div>
+            <h4 class="card-title">01. Learn</h4>
+            <p class="text-slate small mb-0">Demystify core scientific principles, electronic currents, algorithmic logic, and structural mechanics in relatable terms.</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-3 reveal">
-          <div class="card-premium text-center">
-            <div class="icon-box icon-box-secondary mx-auto mb-3"><i class="bi bi-chat-square-text"></i></div>
-            <h3 class="card-title">Radical transparency</h3>
-            <p>Shared boards, honest timelines, and direct access to the people doing the work.</p>
+          <div class="card-premium text-center h-100">
+            <div class="icon-box icon-box-secondary mx-auto mb-3"><i class="bi bi-tools"></i></div>
+            <h4 class="card-title">02. Build</h4>
+            <p class="text-slate small mb-0">Assemble hardware components, breadboards, motors, and microcontrollers into physical functioning prototypes.</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-3 reveal">
-          <div class="card-premium text-center">
-            <div class="icon-box icon-box-success mx-auto mb-3"><i class="bi bi-gem"></i></div>
-            <h3 class="card-title">Craft as a default</h3>
-            <p>Every detail — copy, spacing, micro-interaction — is treated as part of the product.</p>
+          <div class="card-premium text-center h-100">
+            <div class="icon-box icon-box-success mx-auto mb-3"><i class="bi bi-shuffle"></i></div>
+            <h4 class="card-title">03. Experiment</h4>
+            <p class="text-slate small mb-0">Change variables, test alternate sensor thresholds, modify code parameters, and embrace troubleshooting as a learning tool.</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-3 reveal">
-          <div class="card-premium text-center">
-            <div class="icon-box icon-box-primary mx-auto mb-3"><i class="bi bi-arrow-repeat"></i></div>
-            <h3 class="card-title">Built to evolve</h3>
-            <p>We design systems and codebases that your internal team can extend long after launch.</p>
+          <div class="card-premium text-center h-100">
+            <div class="icon-box icon-box-primary mx-auto mb-3"><i class="bi bi-stars"></i></div>
+            <h4 class="card-title">04. Innovate</h4>
+            <p class="text-slate small mb-0">Apply integrated technological concepts to design original solutions for real-world environmental and community challenges.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TEAM -->
+  <!-- OUR APPROACH: THE 6-STAGE CYCLE -->
   <section class="section">
     <div class="container">
-      <div class="row section-header justify-content-center text-center">
-        <div class="col-lg-7 reveal">
-          <span class="eyebrow">Leadership</span>
-          <h2 class="section-title">Meet the people steering the ship</h2>
-        </div>
-      </div>
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-3 reveal">
-          <div class="card-premium text-center">
-            <img src="https://i.pravatar.cc/160?img=8" class="rounded-circle mb-3" style="width:96px;height:96px;object-fit:cover;" alt="Daniel Hwang, CEO">
-            <h3 class="card-title">Daniel Hwang</h3>
-            <p class="text-primary-custom fw-semibold mb-2">CEO &amp; Co-Founder</p>
-            <p class="small">Formerly led product at two YC-backed startups before founding Nexora.</p>
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 reveal">
+          <span class="eyebrow">Practical Pedagogy</span>
+          <h2 class="section-title">How Students Progress: The Six-Stage Engineering Flow</h2>
+          <p class="section-subtitle mb-4">
+            Instead of presenting technology as a pre-packaged black box, our structured learning methodology intentionally nurtures progressive capabilities at every stage:
+          </p>
+          <div class="vstack gap-3">
+            <div class="p-3 bg-soft border rounded-3 d-flex align-items-center gap-3">
+              <span class="badge bg-primary rounded-pill px-3 py-2 fw-bold">1</span>
+              <div><strong class="text-navy">Problem-Solving:</strong> Deconstructing complex challenges into logical steps with systematic root-cause debugging.</div>
+            </div>
+            <div class="p-3 bg-soft border rounded-3 d-flex align-items-center gap-3">
+              <span class="badge bg-primary rounded-pill px-3 py-2 fw-bold">2</span>
+              <div><strong class="text-navy">Creativity:</strong> Transforming curiosity into inventive prototypes, novel mechanisms, and original technical builds.</div>
+            </div>
+            <div class="p-3 bg-soft border rounded-3 d-flex align-items-center gap-3">
+              <span class="badge bg-primary rounded-pill px-3 py-2 fw-bold">3</span>
+              <div><strong class="text-navy">Critical Thinking:</strong> Evaluating telemetry data, testing assumptions, and making informed engineering trade-offs.</div>
+            </div>
+            <div class="p-3 bg-soft border rounded-3 d-flex align-items-center gap-3">
+              <span class="badge bg-primary rounded-pill px-3 py-2 fw-bold">4</span>
+              <div><strong class="text-navy">Collaboration:</strong> Thriving in multi-disciplinary lab pods through role sharing, teamwork, and constructive peer reviews.</div>
+            </div>
+            <div class="p-3 bg-soft border rounded-3 d-flex align-items-center gap-3">
+              <span class="badge bg-primary rounded-pill px-3 py-2 fw-bold">5</span>
+              <div><strong class="text-navy">Communication:</strong> Articulating ideas clearly, documenting circuit schematics, and delivering live project demonstrations.</div>
+            </div>
+            <div class="p-3 bg-white border border-primary rounded-3 d-flex align-items-center gap-3 shadow-sm">
+              <span class="badge bg-primary text-white rounded-pill px-3 py-2 fw-bold">6</span>
+              <div><strong class="text-primary-custom">Experimentation &amp; Engineering Thinking:</strong> Testing hypotheses through iterative trial-and-error while mastering systems architecture, safety, and constraints.</div>
+            </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 reveal">
-          <div class="card-premium text-center">
-            <img src="https://i.pravatar.cc/160?img=47" class="rounded-circle mb-3" style="width:96px;height:96px;object-fit:cover;" alt="Priya Nair, Head of Design">
-            <h3 class="card-title">Priya Nair</h3>
-            <p class="text-primary-custom fw-semibold mb-2">Head of Design</p>
-            <p class="small">Leads the design system practice and a team of 14 product designers.</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 reveal">
-          <div class="card-premium text-center">
-            <img src="https://i.pravatar.cc/160?img=52" class="rounded-circle mb-3" style="width:96px;height:96px;object-fit:cover;" alt="Marcus Lee, Head of Engineering">
-            <h3 class="card-title">Marcus Lee</h3>
-            <p class="text-primary-custom fw-semibold mb-2">Head of Engineering</p>
-            <p class="small">Oversees architecture and DevOps across all active client builds.</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 reveal">
-          <div class="card-premium text-center">
-            <img src="https://i.pravatar.cc/160?img=25" class="rounded-circle mb-3" style="width:96px;height:96px;object-fit:cover;" alt="Anna Kowalski, Client Success Lead">
-            <h3 class="card-title">Anna Kowalski</h3>
-            <p class="text-primary-custom fw-semibold mb-2">Client Success Lead</p>
-            <p class="small">Your main point of contact — keeps every engagement on track.</p>
+        <div class="col-lg-6 reveal">
+          <div class="p-4 p-md-5 bg-navy text-white rounded-4 shadow-lg">
+            <span class="text-uppercase small fw-bold text-primary" style="letter-spacing:0.1em;">Institutional Values</span>
+            <h3 class="text-white font-display mt-2 mb-4">What We Stand For</h3>
+            <div class="vstack gap-4">
+              <div class="d-flex gap-3">
+                <i class="bi bi-shield-check text-primary fs-4"></i>
+                <div>
+                  <h6 class="text-white fw-bold mb-1">Authenticity Over Hype</h6>
+                  <p class="text-white-50 small mb-0">We focus on genuine, age-appropriate learning depth rather than superficial gimmicks.</p>
+                </div>
+              </div>
+              <div class="d-flex gap-3">
+                <i class="bi bi-people-fill text-success fs-4"></i>
+                <div>
+                  <h6 class="text-white fw-bold mb-1">Empowering Educators</h6>
+                  <p class="text-white-50 small mb-0">We provide ongoing trainer presence and teacher enablement so school staff feel supported.</p>
+                </div>
+              </div>
+              <div class="d-flex gap-3">
+                <i class="bi bi-infinity text-info fs-4"></i>
+                <div>
+                  <h6 class="text-white fw-bold mb-1">Continuous Development</h6>
+                  <p class="text-white-50 small mb-0">Technology continuously evolves; our curriculum adapts to integrate advancements in AI, robotics, and automation.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="section pt-0">
+  <!-- FUTURE BUSINESS VISION -->
+  <section class="section bg-soft">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7 reveal">
+          <span class="eyebrow">Our Future Roadmap</span>
+          <h2 class="section-title">Building an Evolving Ecosystem of Practical Solutions</h2>
+          <p class="section-subtitle mb-4">
+            We are building an evolving ecosystem of practical STEM learning solutions. While we currently provide complete lab planning, educational resources, and instruction, our long-term vision is to design and produce our own proprietary learning kits.
+          </p>
+          <p class="text-slate mb-4">
+            These kits will be engineered specifically around our modular curriculum, offering tailored mechanical enclosures, safe quick-connect electronic harnesses, and native coding environments for seamless classroom operation.
+          </p>
+          <div class="p-3 bg-white rounded-3 border">
+            <div class="fw-bold text-navy mb-1"><i class="bi bi-link-45deg text-primary-custom me-1"></i> The Integrated Future Ecosystem:</div>
+            <div class="text-slate small">
+              STEM Kits &bull; Robotics &amp; AI Labs &bull; Structured Curriculum &bull; Trainer Support &bull; Workshops &bull; Sample Projects &bull; School Support
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 reveal">
+          <div class="card-premium">
+            <h5 class="card-title text-navy mb-3"><i class="bi bi-compass text-primary-custom me-2"></i>Future Kit Domains</h5>
+            <ul class="list-unstyled vstack gap-2 text-slate small mb-0">
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check2 text-primary-custom"></i> Modular Electronics &amp; Circuit Explorer Kits</li>
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check2 text-primary-custom"></i> Autonomous Wheeled &amp; Articulated Robotics Kits</li>
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check2 text-primary-custom"></i> Sensor &amp; Environmental Telemetry Packs</li>
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check2 text-primary-custom"></i> Internet of Things &amp; Smart Automation Kits</li>
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check2 text-primary-custom"></i> Edge AI &amp; Vision Intelligence Modules</li>
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check2 text-primary-custom"></i> Mechanical Engineering &amp; Kinematics Challenges</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <section class="section">
     <div class="container">
       <div class="cta-section reveal">
         <div class="row align-items-center">
           <div class="col-lg-8">
-            <h2 class="mb-2">Want to work with us?</h2>
-            <p class="mb-0 fs-5">We're currently accepting 3 new partners for Q3 2026.</p>
+            <h2 class="text-white font-display mb-2">Partner with SPL Techbot</h2>
+            <p class="text-white-50 fs-5 mb-0">Discover how our structured technology programs can enrich your school's educational offering.</p>
           </div>
           <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
-            <a href="contact.html" class="btn btn-primary btn-lg-custom">Get in Touch <i class="bi bi-arrow-right ms-1"></i></a>
+            <a href="contact.html#demo" class="btn btn-primary btn-lg-custom">Request a Consultation <i class="bi bi-arrow-right ms-1"></i></a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="footer-nexora">
     <div class="container">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6">
-          <a class="navbar-brand-custom d-inline-block mb-3" href="index.html" style="color:#fff !important;">Nexora<span style="color:var(--n-primary)">.</span></a>
-          <p class="text-white-50 mb-4" style="max-width:320px;">We help ambitious SaaS and tech companies design, build and scale digital products that customers love.</p>
-          <div class="d-flex gap-2">
-            <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
-            <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
-            <a href="#" class="social-icon"><i class="bi bi-dribbble"></i></a>
-            <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+          <a class="navbar-brand-custom d-inline-block mb-3" href="index.html" style="color:#fff !important;">
+            SPL<span style="color:var(--n-primary)">Techbot.</span>
+          </a>
+          <p class="text-white-50 mb-3" style="max-width:320px;">
+            A complete technology-learning partner helping schools introduce practical STEM, Robotics, and Artificial Intelligence education.
+          </p>
+          <div class="text-white-50 small mb-3">
+            <strong class="text-white d-block mb-1">Guiding Philosophy:</strong>
+            "Learn. Build. Experiment. Innovate."
           </div>
         </div>
         <div class="col-lg-2 col-md-6 col-6">
-          <h6>Company</h6>
+          <h6>Navigation</h6>
+          <a href="index.html">Home</a>
           <a href="about.html">About Us</a>
           <a href="services.html">Services</a>
-          <a href="portfolio.html">Portfolio</a>
-          <a href="blog.html">Blog</a>
-          <a href="contact.html">Careers</a>
+          <a href="curriculum.html">Curriculum</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact Us</a>
         </div>
-        <div class="col-lg-2 col-md-6 col-6">
-          <h6>Services</h6>
-          <a href="service-details.html">Product Strategy</a>
-          <a href="service-details.html">UI/UX Design</a>
-          <a href="service-details.html">Web Development</a>
-          <a href="service-details.html">Cloud &amp; DevOps</a>
-          <a href="service-details.html">Growth Marketing</a>
+        <div class="col-lg-3 col-md-6 col-6">
+          <h6>School Solutions</h6>
+          <a href="robotics-ai-labs.html">Robotics &amp; AI Labs</a>
+          <a href="stem-labs.html">STEM Labs</a>
+          <a href="stem-kits.html">STEM Learning Kits</a>
+          <a href="workshops.html">Interactive Workshops</a>
+          <a href="trainer-support.html">Trainer Support</a>
+          <a href="school-consultation.html">School Consultation</a>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <h6>Stay in the loop</h6>
-          <p class="text-white-50 mb-3">Get product updates and insights from our team, once a month.</p>
-          <form class="d-flex gap-2 needs-validation" novalidate>
-            <input type="email" class="form-control" placeholder="Work email" required style="background:rgba(255,255,255,0.06); border-color:rgba(255,255,255,0.12); color:#fff;">
-            <button class="btn btn-primary flex-shrink-0" type="submit"><i class="bi bi-send"></i></button>
-          </form>
+        <div class="col-lg-3 col-md-6">
+          <h6>Connect with Us</h6>
+          <p class="text-white-50 mb-3 small">Partner with us to build a future-ready technology program for your students.</p>
+          <a href="contact.html" class="btn btn-primary btn-sm-custom w-100 mb-2">Request Consultation</a>
+          <div class="text-white-50 small mt-2">
+            <i class="bi bi-envelope me-1"></i> contact@spltechbot.com
+          </div>
         </div>
       </div>
       <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 text-center text-md-start">
-        <p class="mb-0" style="display: flex;">&copy; 2026 Nexora. All rights reserved by <a target="_blank" href="https://github.com/HarshadMahadik" style="color: white;padding-left: 5px;"> Harshad Mahadik</a> &bull; Distributed by <a target="_blank" href="https://themewagon.com/" style="color: white;padding-left: 5px;">Themewagon</a></p>
-        <div class="d-flex gap-4">
-          <a href="#" class="mb-0">Privacy Policy</a>
-          <a href="#" class="mb-0">Terms of Service</a>
+        <p class="mb-0 text-white-50 small">
+          &copy; 2026 SPL Techbot. Practical STEM, Robotics &amp; AI Education for Future-Ready Students.
+        </p>
+        <div class="d-flex gap-3 small">
+          <a href="faq.html" class="text-white-50">FAQ</a>
+          <a href="contact.html" class="text-white-50">School Enquiries</a>
         </div>
       </div>
     </div>
   </footer>
+
+  <!-- DEMO BOOKING MODAL -->
+  <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content rounded-4 border-0 shadow-lg">
+        <div class="modal-header border-0 pb-0 pt-4 px-4 px-md-5">
+          <div>
+            <span class="badge bg-primary text-white rounded-pill px-3 py-1 small">Campus Demonstration</span>
+            <h3 class="modal-title font-display fw-bold text-navy mt-2" id="demoModalLabel">See Practical STEM Learning in Action</h3>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body px-4 px-md-5 py-4">
+          <p class="text-slate small mb-4">
+            Tell us about your school and technology goals. Our team will bring sample kits and live robotics demonstration models to your campus.
+          </p>
+          <form class="needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label text-navy fw-semibold small">Full Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" placeholder="e.g. Dr. Robert Vance" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label text-navy fw-semibold small">School / Institution Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" placeholder="e.g. Cambridge Academy" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label text-navy fw-semibold small">Designation <span class="text-danger">*</span></label>
+                <select class="form-select" required>
+                  <option value="" selected disabled>Select your role</option>
+                  <option value="Principal">Principal / Head of School</option>
+                  <option value="Director">School Director / Trustee</option>
+                  <option value="STEM Coordinator">STEM / Robotics Coordinator</option>
+                  <option value="Teacher">Science / CS Faculty</option>
+                  <option value="Management">Management</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label text-navy fw-semibold small">Official Email <span class="text-danger">*</span></label>
+                <input type="email" class="form-control" placeholder="principal@school.edu" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label text-navy fw-semibold small">Contact Phone <span class="text-danger">*</span></label>
+                <input type="tel" class="form-control" placeholder="+1 (555) 000-0000" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label text-navy fw-semibold small">Program Interest <span class="text-danger">*</span></label>
+                <select class="form-select" required>
+                  <option value="" selected disabled>Select primary interest</option>
+                  <option value="Complete Ecosystem">Complete Turnkey STEM Ecosystem</option>
+                  <option value="Robotics & AI Labs">Robotics &amp; AI Labs</option>
+                  <option value="STEM Labs">STEM Labs &amp; Maker Space</option>
+                  <option value="STEM Kits">STEM Learning Kits</option>
+                  <option value="Workshops">Workshops &amp; Bootcamps</option>
+                  <option value="Trainer Support">Trainer &amp; Instructor Support</option>
+                  <option value="Consultation">School Consultation</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label class="form-label text-navy fw-semibold small">Specific Requirements or Preferred Dates</label>
+                <textarea class="form-control" rows="3" placeholder="Tell us about your campus, grade levels, or specific timeline..."></textarea>
+              </div>
+              <div class="col-12 mt-4">
+                <button type="submit" class="btn btn-primary btn-lg-custom w-100">
+                  Submit School Demo Request <i class="bi bi-send ms-1"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <button class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
 

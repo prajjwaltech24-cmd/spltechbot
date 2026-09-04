@@ -412,6 +412,10 @@ a { text-decoration: none; }
 .icon-box-primary { background: var(--n-bg-alt); color: var(--n-primary); }
 .icon-box-secondary { background: #F4F0FF; color: var(--n-secondary); }
 .icon-box-success { background: #E7F9F0; color: var(--n-success); }
+.icon-box-warning { background: #FEF0C7; color: #B54708; }
+.icon-box-info { background: #E0F2FE; color: #0284C7; }
+.icon-box-danger { background: #FEE4E2; color: #D92D20; }
+.icon-box-purple { background: #F4EBFF; color: #6941C6; }
 
 .icon-box-lg { width: 72px; height: 72px; font-size: 2rem; border-radius: var(--n-radius-md); }
 
@@ -947,3 +951,491 @@ a { text-decoration: none; }
   border-radius: var(--n-radius-md);
   height: 100%;
 }
+
+/* =====================================================
+   STEM, ROBOTICS & AI EDUCATION EXTENSIONS
+   ===================================================== */
+
+/* Dropdown Menu Styling */
+.navbar-nexora .dropdown-menu {
+  border: 1px solid rgba(21, 94, 239, 0.12);
+  border-radius: var(--n-radius-md);
+  box-shadow: 0 16px 36px rgba(11, 20, 55, 0.14);
+  padding: 0.6rem 0.5rem;
+  min-width: 250px;
+  animation: dropdownFade 0.2s ease;
+}
+
+@keyframes dropdownFade {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.navbar-nexora .dropdown-item {
+  font-weight: 500;
+  font-size: 0.92rem;
+  color: var(--n-navy);
+  padding: 0.6rem 1rem;
+  border-radius: var(--n-radius-sm);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.navbar-nexora .dropdown-item i {
+  font-size: 1.1rem;
+  color: var(--n-primary);
+  transition: transform 0.2s ease;
+}
+
+.navbar-nexora .dropdown-item:hover {
+  background: var(--n-bg-alt);
+  color: var(--n-primary);
+  transform: translateX(4px);
+}
+
+.navbar-nexora .dropdown-item:hover i {
+  transform: scale(1.15);
+}
+
+/* Tech Badges & Tags */
+.tech-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--n-radius-pill);
+  font-size: 0.78rem;
+  font-weight: 600;
+  background: #EEF4FF;
+  color: #1D4ED8;
+  border: 1px solid rgba(29, 78, 216, 0.15);
+  margin: 0.2rem;
+}
+
+.tech-tag-robotics {
+  background: #F5F3FF;
+  color: #6D28D9;
+  border-color: rgba(109, 40, 217, 0.15);
+}
+
+.tech-tag-ai {
+  background: #ECFDF5;
+  color: #047857;
+  border-color: rgba(4, 120, 87, 0.15);
+}
+
+.tech-tag-iot {
+  background: #FFF7ED;
+  color: #C2410C;
+  border-color: rgba(194, 65, 12, 0.15);
+}
+
+/* Project Filter Buttons */
+.project-filter-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.filter-btn {
+  border: 1px solid var(--n-border);
+  background: #fff;
+  color: var(--n-slate);
+  font-family: var(--n-font-display);
+  font-weight: 600;
+  font-size: 0.88rem;
+  padding: 0.6rem 1.3rem;
+  border-radius: var(--n-radius-pill);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.filter-btn:hover {
+  border-color: var(--n-primary);
+  color: var(--n-primary);
+  background: var(--n-bg-alt);
+}
+
+.filter-btn.active {
+  background: var(--n-primary);
+  color: #fff;
+  border-color: var(--n-primary);
+  box-shadow: 0 4px 14px rgba(21, 94, 239, 0.3);
+}
+
+/* Project Cards */
+.sample-project-card {
+  background: #fff;
+  border-radius: var(--n-radius-md);
+  border: 1px solid var(--n-border);
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sample-project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--n-shadow-lg);
+  border-color: rgba(21, 94, 239, 0.3);
+}
+
+.project-card-header {
+  padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-card-body {
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card-body h4 {
+  font-size: 1.15rem;
+  margin-bottom: 0.6rem;
+}
+
+.project-badge-beginner {
+  background: #ECFDF5;
+  color: #059669;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.project-badge-intermediate {
+  background: #EFF6FF;
+  color: #2563EB;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.project-badge-advanced {
+  background: #F5F3FF;
+  color: #7C3AED;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Methodology Steps Flow */
+.methodology-flow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem 0;
+}
+
+.methodology-step-box {
+  background: #fff;
+  border: 1px solid var(--n-border);
+  border-radius: var(--n-radius-md);
+  padding: 1.25rem 1.5rem;
+  text-align: center;
+  min-width: 140px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.methodology-step-box:hover {
+  transform: translateY(-4px);
+  border-color: var(--n-primary);
+  box-shadow: var(--n-shadow-md);
+}
+
+.methodology-step-box .step-num {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--n-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+.methodology-step-box .step-title {
+  font-family: var(--n-font-display);
+  font-weight: 700;
+  color: var(--n-navy);
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.methodology-arrow {
+  color: var(--n-primary);
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 991.98px) {
+  .methodology-arrow { display: none; }
+}
+
+/* Curriculum Level Card */
+.curriculum-level-card {
+  background: #fff;
+  border: 1px solid var(--n-border);
+  border-radius: var(--n-radius-lg);
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.curriculum-level-card:hover {
+  border-color: rgba(21, 94, 239, 0.35);
+  box-shadow: var(--n-shadow-md);
+}
+
+.curriculum-tier-tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 800;
+  padding: 0.35rem 0.9rem;
+  border-radius: var(--n-radius-pill);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+/* Highlighting Feature Box */
+.ecosystem-pillar-card {
+  background: #fff;
+  border: 1px solid var(--n-border);
+  border-radius: var(--n-radius-md);
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ecosystem-pillar-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--n-shadow-lg);
+  border-color: var(--n-primary);
+}
+
+/* School Partnership Timeline Steps */
+.partner-step-card {
+  background: #fff;
+  border: 1px solid var(--n-border);
+  border-radius: var(--n-radius-md);
+  padding: 1.75rem;
+  height: 100%;
+  position: relative;
+  border-top: 4px solid var(--n-primary);
+  transition: all 0.3s ease;
+}
+
+.partner-step-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--n-shadow-md);
+}
+
+.partner-step-num {
+  font-family: var(--n-font-display);
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--n-primary);
+  opacity: 0.4;
+  margin-bottom: 0.5rem;
+}
+
+/* STEM Visual Interactive Mockup */
+.stem-hero-badge {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(21, 94, 239, 0.15);
+  border-radius: var(--n-radius-md);
+  padding: 0.9rem 1.2rem;
+  box-shadow: 0 10px 25px rgba(11, 20, 55, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+/* =====================================================
+   INTERACTIVE JAVASCRIPT COMPONENTS & WIDGETS
+   ===================================================== */
+
+/* Clickable Project Card */
+.sample-project-card.clickable-card {
+  cursor: pointer;
+  position: relative;
+}
+
+.sample-project-card.clickable-card:hover .project-view-hint {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-view-hint {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.75rem;
+  background: var(--n-bg-alt);
+  color: var(--n-primary);
+  font-size: 0.78rem;
+  font-weight: 700;
+  border-radius: var(--n-radius-sm);
+  margin-top: 0.75rem;
+  opacity: 0.85;
+  transition: all 0.2s ease;
+}
+
+/* Interactive Lab Planner Widget */
+.lab-planner-box {
+  background: #fff;
+  border-radius: var(--n-radius-lg);
+  border: 1px solid var(--n-border);
+  box-shadow: var(--n-shadow-lg);
+  overflow: hidden;
+}
+
+.planner-control-group {
+  margin-bottom: 1.5rem;
+}
+
+.planner-control-group label {
+  font-family: var(--n-font-display);
+  font-weight: 700;
+  color: var(--n-navy);
+  font-size: 0.92rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.planner-metric-card {
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: var(--n-radius-md);
+  padding: 1.25rem;
+  text-align: center;
+  transition: all 0.25s ease;
+}
+
+.planner-metric-card:hover {
+  background: #EEF4FF;
+  border-color: var(--n-primary);
+  transform: translateY(-2px);
+}
+
+.planner-metric-val {
+  font-family: var(--n-font-display);
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--n-primary);
+  line-height: 1.2;
+}
+
+.planner-metric-title {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--n-navy);
+  margin-top: 0.25rem;
+}
+
+.planner-metric-sub {
+  font-size: 0.72rem;
+  color: var(--n-slate);
+}
+
+/* Live FAQ Search Input */
+.faq-search-wrapper {
+  max-width: 540px;
+  margin: 0 auto 2.5rem auto;
+  position: relative;
+}
+
+.faq-search-wrapper input {
+  padding: 0.9rem 1.2rem 0.9rem 3rem;
+  border-radius: var(--n-radius-pill);
+  border: 1px solid var(--n-border);
+  box-shadow: 0 4px 14px rgba(11, 20, 55, 0.05);
+  font-size: 0.95rem;
+}
+
+.faq-search-wrapper input:focus {
+  border-color: var(--n-primary);
+  box-shadow: 0 0 0 4px rgba(21, 94, 239, 0.15);
+}
+
+.faq-search-icon {
+  position: absolute;
+  left: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--n-primary);
+  font-size: 1.1rem;
+}
+
+/* Submission Confirmation Toast / Alert */
+.submission-banner {
+  background: #ECFDF5;
+  border: 1px solid #A7F3D0;
+  color: #065F46;
+  border-radius: var(--n-radius-md);
+  padding: 1.25rem 1.5rem;
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Floating WhatsApp Button */
+.floating-whatsapp-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: #25D366;
+  color: #fff !important;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+  z-index: 1050;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+}
+
+.floating-whatsapp-btn:hover {
+  transform: scale(1.1) translateY(-4px);
+  box-shadow: 0 12px 28px rgba(37, 211, 102, 0.6);
+  background-color: #20BA5A;
+  color: #fff !important;
+}
+

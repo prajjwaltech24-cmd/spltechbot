@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frequently Asked Questions — SPL Techbot</title>
+  <meta name="description" content="Answers to common questions from school principals, coordinators, and directors regarding STEM labs, robotics programs, curriculum, kits, and trainer support.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23155EEF'/%3E%3Cpath d='M30 70 L30 30 L50 50 L70 30 L70 70' stroke='white' stroke-width='10' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-nexora fixed-top">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-custom d-flex align-items-center gap-2" href="index.html">
+        <span class="d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-3 p-1" style="width:34px;height:34px;">
+          <i class="bi bi-cpu-fill fs-5"></i>
+        </span>
+        <span>SPL<span class="text-primary-custom">Techbot</span></span>
+      </a>
+      <button class="navbar-toggler navbar-toggler-custom" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-1 mt-3 mt-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="services.html"><i class="bi bi-grid-fill"></i> All Solutions Overview</a></li>
+              <li><hr class="dropdown-divider my-1"></li>
+              <li><a class="dropdown-item" href="robotics-ai-labs.html"><i class="bi bi-robot"></i> Robotics &amp; AI Labs</a></li>
+              <li><a class="dropdown-item" href="stem-labs.html"><i class="bi bi-tools"></i> STEM Labs</a></li>
+              <li><a class="dropdown-item" href="stem-kits.html"><i class="bi bi-box-seam"></i> STEM Kits</a></li>
+              <li><a class="dropdown-item" href="workshops.html"><i class="bi bi-lightning-charge"></i> Workshops</a></li>
+              <li><a class="dropdown-item" href="trainer-support.html"><i class="bi bi-person-video3"></i> Trainer Support</a></li>
+              <li><a class="dropdown-item" href="school-consultation.html"><i class="bi bi-chat-square-text"></i> School Consultation</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="curriculum.html">Curriculum</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a href="contact.html" class="btn btn-primary btn-sm-custom w-100">
+              <i class="bi bi-calendar-event me-1"></i> Book a Demo
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="container">
+      <h1 class="mb-3">Frequently Asked Questions</h1>
+      <div class="breadcrumb-custom">
+        <a href="index.html">Home</a> <span>/</span> <span class="active">FAQ</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- FAQ SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="text-center mb-4 reveal">
+            <span class="eyebrow">Clear, Honest Answers</span>
+            <h2 class="section-title">Everything Schools Need to Know</h2>
+            <p class="section-subtitle mx-auto">
+              We believe in total transparency. Here are clear answers to the most common questions raised by school leadership and coordinators.
+            </p>
+          </div>
+
+          <!-- LIVE JAVASCRIPT FAQ SEARCH -->
+          <div class="faq-search-wrapper reveal">
+            <i class="bi bi-search faq-search-icon"></i>
+            <input type="text" class="form-control" id="faqSearchInput" placeholder="Search questions (e.g. trainers, space, kits, age groups, customized)...">
+            <div id="faqResultCount" class="text-center mt-2 small text-primary fw-semibold" style="display:none;"></div>
+          </div>
+
+          <div class="accordion accordion-custom reveal" id="stemFaqAccordion">
+
+            <!-- Question 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  1. What is a STEM lab?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#stemFaqAccordion">
+                <div class="accordion-body">
+                  A STEM lab is a dedicated, hands-on learning environment equipped for practical science, technology, engineering, and mathematics exploration. Unlike a standard computer lab where students primarily interact with screens, a STEM lab provides physical workbenches, microcontrollers, electronics components, robotics chassis, sensors, and testing tools where students build tangible devices and experiment directly with hardware and code.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  2. What age groups and grades can participate in these programs?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#stemFaqAccordion">
+                <div class="accordion-body">
+                  Our curriculum covers students from Grade 1 through Grade 12 (approx. ages 6 to 18). Each cohort engages with age-appropriate tools: Primary school students start with safe visual block-logic, snap circuits, and kinetic building; Middle school students advance to breadboarding, sensors, and introductory Arduino C++; High school students progress to Python, IoT telemetry, computer vision, and machine learning concepts.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  3. What subject areas are covered in the curriculum?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#stemFaqAccordion">
+                <div class="accordion-body">
+                  The curriculum covers STEM fundamentals, electronics and circuit building, sensory perception, coding and programming (visual blocks, C++, and Python), mobile robotics, automation, artificial intelligence, IoT, and the engineering design methodology (Understand &rarr; Explore &rarr; Build &rarr; Test &rarr; Improve &rarr; Innovate).
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  4. Do schools need an existing dedicated lab to get started?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#stemFaqAccordion">
+                <div class="accordion-body">
+                  No. While a dedicated room provides the ideal immersive experience, our solutions are highly adaptable. We can help schools convert an existing science laboratory, multi-purpose room, or computer lab into a flexible maker space with modular storage carts and portable workstation kits.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  5. Do you provide STEM and robotics kits?
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#stemFaqAccordion">
+                <div class="accordion-body">
+                  Yes. We supply comprehensive hardware kits containing microcontrollers, motor drivers, sensor modules, breadboards, wiring harnesses, and chassis materials. In addition, our long-term business vision is focused on developing an expanding ecosystem of proprietary educational kits designed specifically around our curriculum.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  6. Do you provide trainers and instructors?
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#stemFaqAccordion">
+                <div class="accordion-body">
+                  Yes. We believe hands-on technology learning requires active guidance. We provide trained instructors who can conduct practical classroom sessions, mentor students through troubleshooting, manage equipment, and co-teach with your school's existing science and computer faculty.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  7. Can programs be customized according to our school's timetable?
+                </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#stemFaqAccordion">
+                <div class="accordion-body">
+                  Absolutely. We can integrate into your regular weekly academic timetable (e.g., one or two periods per week per section), run as an after-school technology club, or operate as weekend immersion modules and holiday workshops.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                  8. Can schools request standalone robotics and AI programs?
+                </button>
+              </h2>
+              <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#stemFaqAccordion">
+                <div class="accordion-body">
+                  Yes. Schools can choose our comprehensive STEM ecosystem or opt specifically for our dedicated Robotics &amp; AI Lab program, focusing on mobile rovers, autonomous systems, computer vision, and machine learning applications.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingNine">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                  9. How does curriculum implementation work?
+                </button>
+              </h2>
+              <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#stemFaqAccordion">
+                <div class="accordion-body">
+                  We supply detailed term-by-term lesson plans, teacher facilitation guides, student project workbooks, and slide presentations. Each module integrates theoretical concept introductions with immediate hands-on building and verification tasks.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTen">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                  10. Can you help plan a completely new STEM lab from scratch?
+                </button>
+              </h2>
+              <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#stemFaqAccordion">
+                <div class="accordion-body">
+                  Yes. Our School Consultation process handles complete space layout advisory, electrical load planning, ergonomic workbench recommendations, kit-to-student inventory sizing, and safety protocols to ensure your investment is optimized.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingEleven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                  11. What types of workshops are available?
+                </button>
+              </h2>
+              <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#stemFaqAccordion">
+                <div class="accordion-body">
+                  We offer single-day hackathons, 3–5 day summer/winter bootcamps, robotics competitions, IoT smart-home challenges, beginner coding intensives, and preparation for inter-school science and innovation exhibitions.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 12 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwelve">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                  12. Can programs be conducted on a recurring annual basis?
+                </button>
+              </h2>
+              <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#stemFaqAccordion">
+                <div class="accordion-body">
+                  Yes. We partner with schools on multi-term and annual models to provide ongoing trainer support, curriculum updates, replacement hardware buffers, and progressive student evaluation.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 13 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThirteen">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                  13. How can a school book an initial consultation?
+                </button>
+              </h2>
+              <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen" data-bs-parent="#stemFaqAccordion">
+                <div class="accordion-body">
+                  You can submit an inquiry through our <a href="contact.html">Contact Us</a> form or call us directly. Our educational coordinators will arrange an in-person or virtual planning session at your school's convenience.
+                </div>
+              </div>
+            </div>
+
+            <!-- Question 14 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFourteen">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                  14. How can our school request a live demonstration?
+                </button>
+              </h2>
+              <div id="collapseFourteen" class="accordion-collapse collapse" aria-labelledby="headingFourteen" data-bs-parent="#stemFaqAccordion">
+                <div class="accordion-body">
+                  Use our "Book a School Demo" button located across the website, or fill out the enquiry form on our <a href="contact.html#demo">Contact page</a>. Our team will bring sample kits and live robotics demonstration models to your school campus for your leadership team to experience firsthand.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <section class="section bg-soft">
+    <div class="container">
+      <div class="cta-section reveal">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <h2 class="text-white font-display mb-2">Have More Questions?</h2>
+            <p class="text-white-50 fs-5 mb-0">Our team is happy to answer any questions specific to your school's needs.</p>
+          </div>
+          <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+            <a href="contact.html" class="btn btn-primary btn-lg-custom">Talk to Us <i class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-nexora">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6">
+          <a class="navbar-brand-custom d-inline-block mb-3" href="index.html" style="color:#fff !important;">
+            SPL<span style="color:var(--n-primary)">Techbot.</span>
+          </a>
+          <p class="text-white-50 mb-3" style="max-width:320px;">
+            A complete technology-learning partner helping schools introduce practical STEM, Robotics, and Artificial Intelligence education.
+          </p>
+          <div class="text-white-50 small mb-3">
+            <strong class="text-white d-block mb-1">Guiding Philosophy:</strong>
+            "Learn. Build. Experiment. Innovate."
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h6>Navigation</h6>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="curriculum.html">Curriculum</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-6">
+          <h6>School Solutions</h6>
+          <a href="robotics-ai-labs.html">Robotics &amp; AI Labs</a>
+          <a href="stem-labs.html">STEM Labs</a>
+          <a href="stem-kits.html">STEM Learning Kits</a>
+          <a href="workshops.html">Interactive Workshops</a>
+          <a href="trainer-support.html">Trainer Support</a>
+          <a href="school-consultation.html">School Consultation</a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h6>Connect with Us</h6>
+          <p class="text-white-50 mb-3 small">Partner with us to build a future-ready technology program for your students.</p>
+          <a href="contact.html" class="btn btn-primary btn-sm-custom w-100 mb-2">Request Consultation</a>
+          <div class="text-white-50 small mt-2">
+            <i class="bi bi-envelope me-1"></i> contact@spltechbot.com
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 text-center text-md-start">
+        <p class="mb-0 text-white-50 small">
+          &copy; 2026 SPL Techbot. Practical STEM, Robotics &amp; AI Education for Future-Ready Students.
+        </p>
+        <div class="d-flex gap-3 small">
+          <a href="faq.html" class="text-white-50">FAQ</a>
+          <a href="contact.html" class="text-white-50">School Enquiries</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- DEMO BOOKING MODAL -->
+  <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content rounded-4 border-0 shadow-lg">
+        <div class="modal-header border-0 pb-0 pt-4 px-4 px-md-5">
+          <div>
+            <span class="badge bg-primary text-white rounded-pill px-3 py-1 small">Campus Demonstration</span>
+            <h3 class="modal-title font-display fw-bold text-navy mt-2" id="demoModalLabel">See Practical STEM Learning in Action</h3>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body px-4 px-md-5 py-4">
+          <p class="text-slate small mb-4">
+            Tell us about your school and technology goals. Our team will bring sample kits and live robotics demonstration models to your campus.
+          </p>
+          <form class="needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label text-navy fw-semibold small">Full Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" placeholder="e.g. Dr. Robert Vance" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label text-navy fw-semibold small">School / Institution Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" placeholder="e.g. Cambridge Academy" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label text-navy fw-semibold small">Designation <span class="text-danger">*</span></label>
+                <select class="form-select" required>
+                  <option value="" selected disabled>Select your role</option>
+                  <option value="Principal">Principal / Head of School</option>
+                  <option value="Director">School Director / Trustee</option>
+                  <option value="STEM Coordinator">STEM / Robotics Coordinator</option>
+                  <option value="Teacher">Science / CS Faculty</option>
+                  <option value="Management">Management</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label text-navy fw-semibold small">Official Email <span class="text-danger">*</span></label>
+                <input type="email" class="form-control" placeholder="principal@school.edu" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label text-navy fw-semibold small">Contact Phone <span class="text-danger">*</span></label>
+                <input type="tel" class="form-control" placeholder="+1 (555) 000-0000" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label text-navy fw-semibold small">Program Interest <span class="text-danger">*</span></label>
+                <select class="form-select" required>
+                  <option value="" selected disabled>Select primary interest</option>
+                  <option value="Complete Ecosystem">Complete Turnkey STEM Ecosystem</option>
+                  <option value="Robotics & AI Labs">Robotics &amp; AI Labs</option>
+                  <option value="STEM Labs">STEM Labs &amp; Maker Space</option>
+                  <option value="STEM Kits">STEM Learning Kits</option>
+                  <option value="Workshops">Workshops &amp; Bootcamps</option>
+                  <option value="Trainer Support">Trainer &amp; Instructor Support</option>
+                  <option value="Consultation">School Consultation</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label class="form-label text-navy fw-semibold small">Specific Requirements or Preferred Dates</label>
+                <textarea class="form-control" rows="3" placeholder="Tell us about your campus, grade levels, or specific timeline..."></textarea>
+              </div>
+              <div class="col-12 mt-4">
+                <button type="submit" class="btn btn-primary btn-lg-custom w-100">
+                  Submit School Demo Request <i class="bi bi-send ms-1"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
